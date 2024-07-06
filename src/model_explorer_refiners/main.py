@@ -10,7 +10,7 @@ class RefinersAdapter(Adapter):
         id="refiners",
         name="Refiners adapter",
         description="Refiners adapter for Model Explorer",
-        source_repo="https://github.com/finegrain/model-explorer-refiners",
+        source_repo="https://github.com/Laurent2916/model-explorer-refiners",
     )
 
     def __init__(self):
