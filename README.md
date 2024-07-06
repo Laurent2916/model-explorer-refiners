@@ -1,6 +1,6 @@
 # Refiners Model Explorer
 
-A Model Explorer extension to visualize and explore refiners models.
+A [Model Explorer](https://github.com/google-ai-edge/model-explorer) extension to visualize and explore refiners models.
 
 ![](docs/assets/example.webp)
 
@@ -18,5 +18,4 @@ from model_explorer_refiners import RefinersAdapter
 
 model = DINOv2_small_reg()
 RefinersAdapter.visualize(model)
-
 ```
