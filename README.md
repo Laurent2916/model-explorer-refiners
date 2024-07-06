@@ -1,6 +1,6 @@
 # Refiners Model Explorer
 
-A Model Explorer extension to visualize and explore Refiners-based model.
+A Model Explorer extension to visualize and explore refiners models.
 
 ![](docs/assets/example.webp)
 
