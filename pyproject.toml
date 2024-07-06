@@ -1,0 +1,60 @@
+[project]
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">= 3.9"
+name = "model-explorer-refiners"
+description = "Refiners adapter for Model Explorer"
+authors = [{ name = "Laurent", email = "laurent@lagon.tech" }]
+dependencies = [
+    "ai-edge-model-explorer",
+    "refiners @ git+https://github.com/finegrain-ai/refiners",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/model_explorer_refiners"]
+
+[tool.ruff]
+src = ["src"]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "A",   # flake8-builtins
+    "B",   # flake8-bugbear
+    "C90", # mccabe
+    "COM", # flake8-commas
+    "EM",  # flake8-errmsg
+    "E",   # pycodestyle errors
+    "F",   # Pyflakes
+    "G",   # flake8-logging-format
+    "I",   # isort
+    "N",   # pep8-naming
+    "PIE", # flake8-pie
+    "PTH", # flake8-use-pathlib
+    "TD",  # flake8-todo
+    "FIX", # flake8-fixme
+    "RUF", # ruff
+    "S",   # flake8-bandit
+    "TCH", # flake8-type-checking
+    "TID", # flake8-tidy-imports
+    "UP",  # pyupgrade
+    "W",   # pycodestyle warnings
+]
+
+
+[tool.pyright]
+include = ["model_explorer_refiners"]
+reportMissingTypeStubs = false
+pythonVersion = "3.12"
+pythonPlatform = "Linux"
