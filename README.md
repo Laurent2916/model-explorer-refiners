@@ -2,10 +2,12 @@
 
 A Model Explorer extension to visualize and explore Refiners-based model.
 
+![](docs/assets/example.webp)
+
 ## Installation
 
 ```bash
-pip install git+https://github.com/finegrain-ai/model_explorer_refiners.git
+pip install git+https://github.com/Laurent2916/model-explorer-refiners
 ```
 
 ## Usage
